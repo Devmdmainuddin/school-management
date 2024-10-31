@@ -1,0 +1,123 @@
+[
+    {
+      "courseId": "C101",
+      "title": "Introduction to Web Development",
+      "description": "Learn the basics of HTML, CSS, and JavaScript to build your first website.",
+      "category": "Web Development",
+      "price": 49.99,
+      "duration": "4 weeks",
+      "instructor": "Alice Johnson",
+      "rating": 4.5,
+      "studentsEnrolled": 1500,
+      "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794"
+    },
+    {
+      "courseId": "C102",
+      "title": "Advanced JavaScript",
+      "description": "Master JavaScript concepts such as closures, promises, and async/await.",
+      "category": "Programming",
+      "price": 79.99,
+      "duration": "6 weeks",
+      "instructor": "John Smith",
+      "rating": 4.7,
+      "studentsEnrolled": 1200,
+      "image": "https://images.unsplash.com/photo-1553729459-efe14ef6055d"
+    },
+    {
+      "courseId": "C103",
+      "title": "Data Science Fundamentals",
+      "description": "An introduction to data science with Python, focusing on data analysis and visualization.",
+      "category": "Data Science",
+      "price": 99.99,
+      "duration": "8 weeks",
+      "instructor": "Emily Davis",
+      "rating": 4.8,
+      "studentsEnrolled": 2000,
+      "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
+    },
+    {
+      "courseId": "C104",
+      "title": "React for Beginners",
+      "description": "Learn how to build dynamic web applications using React.",
+      "category": "Web Development",
+      "price": 59.99,
+      "duration": "5 weeks",
+      "instructor": "Michael Brown",
+      "rating": 4.6,
+      "studentsEnrolled": 1800,
+      "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800"
+    },
+    {
+      "courseId": "C105",
+      "title": "Machine Learning Basics",
+      "description": "An introductory course on machine learning algorithms and their applications.",
+      "category": "Data Science",
+      "price": 109.99,
+      "duration": "10 weeks",
+      "instructor": "Laura Wilson",
+      "rating": 4.9,
+      "studentsEnrolled": 2200,
+      "image": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963"
+    },
+    {
+      "courseId": "C106",
+      "title": "UI/UX Design Essentials",
+      "description": "Understand the fundamentals of UI/UX design to create user-friendly interfaces.",
+      "category": "Design",
+      "price": 69.99,
+      "duration": "6 weeks",
+      "instructor": "Sarah Lee",
+      "rating": 4.3,
+      "studentsEnrolled": 900,
+      "image": "https://images.unsplash.com/photo-1496317899792-9d7dbcd928a1"
+    },
+    {
+      "courseId": "C107",
+      "title": "Python for Data Analysis",
+      "description": "Learn how to use Python for data cleaning, analysis, and visualization.",
+      "category": "Programming",
+      "price": 89.99,
+      "duration": "7 weeks",
+      "instructor": "James Carter",
+      "rating": 4.7,
+      "studentsEnrolled": 1600,
+      "image": "https://images.unsplash.com/photo-1532012197267-da84d127e765"
+    },
+    {
+      "courseId": "C108",
+      "title": "Digital Marketing 101",
+      "description": "An overview of digital marketing techniques including SEO, PPC, and social media marketing.",
+      "category": "Marketing",
+      "price": 39.99,
+      "duration": "3 weeks",
+      "instructor": "Rachel Adams",
+      "rating": 4.2,
+      "studentsEnrolled": 1300,
+      "image": "https://images.unsplash.com/photo-1507842217343-583bb7270b66"
+    },
+    {
+      "courseId": "C109",
+      "title": "SQL for Beginners",
+      "description": "Learn SQL from scratch to manage and analyze relational databases.",
+      "category": "Database",
+      "price": 49.99,
+      "duration": "4 weeks",
+      "instructor": "David Miller",
+      "rating": 4.4,
+      "studentsEnrolled": 1400,
+      "image": "https://images.unsplash.com/photo-1516979187457-637abb4f9353"
+    },
+    {
+      "courseId": "C110",
+      "title": "Full-Stack Development Bootcamp",
+      "description": "A comprehensive bootcamp covering both front-end and back-end web development.",
+      "category": "Web Development",
+      "price": 199.99,
+      "duration": "12 weeks",
+      "instructor": "Linda Thompson",
+      "rating": 4.9,
+      "studentsEnrolled": 2500,
+      "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2"
+    }
+  ]
+  

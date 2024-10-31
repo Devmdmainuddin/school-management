@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
@@ -12,10 +12,27 @@ const Navlinks = [
   { id: 3, name: "Services", link: "/services" },
 ]
 const Navbar = () => {
+  const [sticky, setSticky] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
   return (
     <>
 <div className=" justify-between hidden md:flex border-b py-3 px-6">
@@ -33,7 +50,10 @@ const Navbar = () => {
   </div>
 </div>
 
-      <div className="relative z-10 shadow-md w-full dark:bg-black dark:text-white duration-300 " >
+      <div className={`${sticky
+          ? "sticky-navbar shadow-md bg-base-200 dark:bg-slate-700 dark:text-white duration-300 transition-all ease-in-out"
+          : ""
+          }  relative z-10 shadow-md w-full dark:bg-black dark:text-white duration-300 `} >
 
         <div className="max-w-[1375px] py-3 px-6 ">
           <div className="flex justify-between items-center">

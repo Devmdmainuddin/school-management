@@ -30,7 +30,7 @@ useEffect(()=>{
                     </div>
                     <div className="flex flex-wrap justify-center gap-5 mt-[50px]">
                         {
-                            course.map((item, index) => (
+                            course.slice(0,9).map((item, index) => (
                                 <Courses key={index} item={item}/>
                             ))
                         }

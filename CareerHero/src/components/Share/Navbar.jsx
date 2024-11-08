@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
+import { UpdateFollower } from "react-mouse-follower";
 
 const Navlinks = [
   { id: 1, name: "Home", link: "/" },
@@ -17,7 +18,6 @@ const Navbar = () => {
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -61,11 +61,25 @@ const Navbar = () => {
               <span className="text-xl  leading-6 text-[#42495b] font-bold capitalize">Career <span className="text-[#04d2c8]">Hero </span> </span>
             </div>
             <nav className="hidden md:block">
-              <ul className="flex items-center gap-8">
-                {Navlinks.map((item, idx) =>
+              <ul >
+                <li>
+                <UpdateFollower
+                  mouseOptions={{
+                    backgroundColor: "#04d2c8",
+                    zIndex: 9999,
+                    followSpeed: 1.5,
+                    scale: 4,
+                    mixBlendMode: "difference",
+                  }}
+                  className="flex items-center gap-8"
+                >
+                     {Navlinks.map((item, idx) =>
                   <Link key={idx} className="text-xs leading-6 text-[#42495b] font-bold uppercase hover:text-[#04d2c8] py-2 border-b-2 border-white hover:border-[#262626] transition-colors duration-500"> {item.name}</Link>
                 )}
 
+                    </UpdateFollower>
+                </li>
+             
 
               </ul>
             </nav>

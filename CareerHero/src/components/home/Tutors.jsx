@@ -5,14 +5,11 @@ import TutorsCard from '../Card/TutorsCard';
 
 const Tutors = () => {
 const[tutors,setTutors]=useState([])
-
     useEffect(()=>{
         fetch('tutorsData.json')
         .then(response => response.json())
         .then(data => {
             setTutors(data)
-            // const popularCourses = data.filter(course => course.popular);
-            // renderPopularCourses(popularCourses);
         });
     },[])
 
@@ -30,8 +27,6 @@ const[tutors,setTutors]=useState([])
                         <TutorsCard key={index} item={item}/>
                     ))
                 }
-               
-           
             </div>
         </Container>
     </div>
